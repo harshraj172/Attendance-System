@@ -3,8 +3,9 @@
 # extract a single face from a given photograph
 def extract_faces(filename, required_size=(150, 150)):
     '''
-    Uses Multi Cascade Convulational Network(MTCNN) to extract faces of individuals present in the image.
-    returns a concise image of face for each individual to improve facial comparison. 
+    Multi Cascade Convulational Network(MTCNN) to extract faces of individuals present in the image.
+    required
+    Returns : a concise image of face for each individual to improve facial comparison. 
     '''
     # load image from file
     image = Image.open(filename)
