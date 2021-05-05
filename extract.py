@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 Extracts a faces from images
-'''
+"""
 def extract_faces(filename, required_size=(150, 150)):
-    '''
-    Extracts faces using Multi Cascade Convulational Network(MTCNN) 
-    filename: path of the image file  
-    required_size: size of returned image
+    """
+    Extracts faces using Multi Cascade Convulational Network(MTCNN). 
+    filename: path of the image file.  
+    required_size: size of returned image.
     Returns: a concise image of face for each individual to improve facial comparison. 
-    '''
+    """
     # load image from file
     image = Image.open(filename)
     # convert to RGB
