@@ -2,5 +2,11 @@
 Attendance system using face recognition is a procedure of recognizing people by using face biostatistics based on the high definition monitoring and other computer technologies.
 Here I have used concepts of Autoencoders to produce feature representation of images to compare the reference image of a person present in the dataset with the selfie taken to identify his presence.
 
-autoencoder.py: An architecture for Convulational Autoencoder
+What does our defined python scripts do?
 
+extract.py: extract faces from each image
+autoencoder.py: architecture for Convulational Autoencoder
+embedding.py: creates embedding of image with the use of Convulational Autencoder
+step.py: includes training and validation step for producing image embeddings
+similarity.py: compares the similarity of embeddings of reference anf selfie images 
+main.py: executes the above functions to output a 'Match' or 'No Match'
