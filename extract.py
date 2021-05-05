@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-
-# extract a single face from a given photograph
+'''
+Extracts a faces from images
+'''
 def extract_faces(filename, required_size=(150, 150)):
     '''
     Extracts faces using Multi Cascade Convulational Network(MTCNN) 
