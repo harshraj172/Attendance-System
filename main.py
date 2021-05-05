@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
+'''
 Building an Attendance Notification System which compares a person's selfie image with his reference image to return a 'match' or 'no match'
-"""
+'''
 
 import numpy as np
 import os
