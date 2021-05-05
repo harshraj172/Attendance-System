@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 Building an Attendance Notification System which compares a person's selfie image with his reference image to return a 'match' or 'no match'
-'''
+"""
 
 import numpy as np
 import os
@@ -29,9 +29,9 @@ from step import train_step
 from step import val_step
 from embedding import create_embedding
 
-'''
+"""
 Prepare Data
-'''
+"""
 transform = T.Compose([T.ToTensor()]) # Normalize the pixels and convert to tensor.
 
 data = [] # list to store tensors
@@ -46,9 +46,9 @@ for subdir1 in os.listdir(PATH):
         tensor_image = transform(face) # transforming image into a tensor
         data.append(tensor_image)
 
-'''
+"""
 Training Script
-'''
+"""
 
 full_dataset = data # Create dataset.
 
@@ -112,9 +112,9 @@ num_images = numpy_embedding.shape[0]
 flattened_embedding = numpy_embedding.reshape((num_images, -1))
 np.save("data_embedding.npy", flattened_embedding)
 
-'''
+"""
 Generate Output
-'''
+"""
 
 from scipy.spatial import distance
 
