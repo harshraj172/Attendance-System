@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
-
+'''
+Convulational Autoencoders: image reconstruction to minimize reconstruction errors by learning the optimal filters.
+'''
 import torch
 import torch.nn as nn
 class ConvEncoder(nn.Module):
     """
-    A simple Convolutional Encoder Model
+    A Convolutional Encoder Model
     """
 
     def __init__(self):
@@ -56,7 +58,7 @@ class ConvEncoder(nn.Module):
 
 class ConvDecoder(nn.Module):
     """
-    A simple Convolutional Decoder Model
+    A Convolutional Decoder Model
     """
 
     def __init__(self):
