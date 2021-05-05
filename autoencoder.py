@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 Convulational Autoencoders: image reconstruction to minimize reconstruction errors by learning the optimal filters.
-'''
+"""
 import torch
 import torch.nn as nn
 class ConvEncoder(nn.Module):
