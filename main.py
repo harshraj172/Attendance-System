@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Building an Attendance Notification System which compares a person's selfie image with his reference image to return a 'match' or 'no match'
+Building an Attendance Notification System which compares a person's selfie image with his reference image to return a 'Match' or 'No Match'.
 """
 
 import numpy as np
@@ -124,24 +124,28 @@ for subdir1 in os.listdir(PATH):
   for subdir2 in os.listdir(f"{PATH}/{subdir1}"):
     ref, selfie = [], []
     for subdir3 in os.listdir(f"{PATH}/{subdir1}/{subdir2}"):
-
+      
+      # Pattern for an image file contains reference image
       pattern = [f"{subdir2}_script.jpg", 
                  f"{subdir2}_script_2.jpg",
                  f"{subdir2}_script_3.jpg",
                  f"{subdir2}_script_4.jpg"]
       
       faces = extract_faces(f"{PATH}/{subdir1}/{subdir2}/{subdir3}")
-
+      
+      # Check if the image file contains reference image
       disp = False
       for pat in pattern:
         if subdir3 == pat:
           disp = True
-       
-      if disp == True: # for reference
+      
+      # for reference image
+      if disp == True: 
         # convert each face in the train set into embedding
         for face in faces:
           ref.append(face)
-      else: # for selfie
+      # for selfie image
+      else: 
         for face in faces:
           selfie.append(face)
     
