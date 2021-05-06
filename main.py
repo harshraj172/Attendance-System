@@ -118,7 +118,7 @@ Generate Output
 
 from scipy.spatial import distance
 
-PATH = '/content/trainset'
+PATH = {'path to test set'}
 
 for subdir1 in os.listdir(PATH):
   for subdir2 in os.listdir(f"{PATH}/{subdir1}"):
