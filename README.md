@@ -10,3 +10,6 @@ Here I have used concepts of Autoencoders to produce feature representation of i
 4. step.py: includes training and validation step for producing image embeddings
 5. similarity.py: compares the similarity of embeddings of reference anf selfie images 
 6. main.py: executes the above functions to output a 'Match' or 'No Match'
+
+# Run
+Execute each python script in separate IDLE shells  
