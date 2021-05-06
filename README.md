@@ -12,4 +12,5 @@ Here I have used concepts of Autoencoders to produce feature representation of i
 6. main.py: executes the above functions to output a 'Match' or 'No Match'
 
 # Run
-Execute each python script in separate IDLE shells  
+1. In main.py edit the PATH variable with the test set directory  
+2. Execute each python script in separate IDLE shells  
