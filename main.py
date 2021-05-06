@@ -10,7 +10,6 @@ import imutils
 import regex as re
 import matplotlib.pyplot as plt
 import pandas as pd
-!pip install mtcnn
 from mtcnn.mtcnn import MTCNN
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
