@@ -13,4 +13,5 @@ Here I have used concepts of Autoencoders to produce feature representation of i
 
 # Run
 1. In main.py edit the PATH variable with the test set directory  
-2. Execute each python script in separate IDLE shells  
+2. Install required python packages from requirements.txt
+3. Execute each python script in separate IDLE shells  
