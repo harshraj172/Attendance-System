@@ -28,13 +28,14 @@ from step import train_step
 from step import val_step
 from embedding import create_embedding
 
+PATH = {'path to test set'}
+
 """
 Prepare Data
 """
 transform = T.Compose([T.ToTensor()]) # Normalize the pixels and convert to tensor.
 
 data = [] # list to store tensors
-PATH = '/content/trainset'
 
 # looping for every image 
 for subdir1 in os.listdir(PATH):
@@ -116,8 +117,6 @@ Generate Output
 """
 
 from scipy.spatial import distance
-
-PATH = {'path to test set'}
 
 for subdir1 in os.listdir(PATH):
   for subdir2 in os.listdir(f"{PATH}/{subdir1}"):
