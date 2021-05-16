@@ -21,8 +21,8 @@ def similarity_score(ref_image, selfie_image, device):
         ref_image_embedding = encoder(ref_image_tensor).cpu().detach().numpy()
         selfie_image_embedding = encoder(selfie_image_tensor).cpu().detach().numpy()
         
-    ref_flattened_embedding = image_embedding.reshape((ref_image_embedding.shape[0], -1))
-    selfie_flattened_embedding = image_embedding.reshape((selfie_image_embedding.shape[0], -1))
+    ref_flattened_embedding = ref_flattened_embedding.reshape((ref_image_embedding.shape[0], -1))
+    selfie_flattened_embedding = selfie_flattened_embedding.reshape((selfie_image_embedding.shape[0], -1))
 
     cosine_score = distance.cosine(ref_flattened_embedding, selfie_flattened_embedding)
     return cosine_score
